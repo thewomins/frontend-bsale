@@ -1,0 +1,40 @@
+#categories {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  min-width: 200px;
+  height: calc(100%-16px);
+  background-color: var(--secundaryContainer);
+  padding: 8px 8px;
+  min-height: calc(100vh - 70px);
+}
+
+#categories p {
+  color: var(--onSecundaryContainer);
+  margin: 0;
+}
+
+#categories .title {
+  font-size: 1.6em;
+  font-weight: 700;
+  margin: 12px 0px;
+}
+
+#items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.category-item {
+  padding: 12px;
+  font-weight: 700;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.category-item:hover {
+  font-size: 1.05em;
+  background-color: var(--shadow);
+}

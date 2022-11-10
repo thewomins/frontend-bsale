@@ -1,0 +1,94 @@
+.button {
+  display: flex;
+  position: relative;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 0px 12px;
+  border-radius: 12px;
+  gap: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-secondary {
+  background-color: var(--surface);
+  border: 1px solid var(--outline);
+  color: var(--onSurface);
+}
+
+.button-primary {
+  background-color: var(--primary);
+  color: var(--onPrimary);
+}
+
+.button-primary img {
+  filter: brightness(0) invert(1);
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.button img {
+  aspect-ratio: 1 / 1;
+  height: 24px;
+}
+
+.button-state {
+  position: absolute;
+  height: inherit;
+  width: 0px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  border-radius: 12px;
+  background-color: var(--surface);
+}
+
+.button-state-active {
+  display: flex;
+  animation: a 1.6s linear normal;
+}
+
+@keyframes a {
+  0% {
+    width: 0px;
+  }
+  25% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+}
+
+.animated-check {
+  height: 24px;
+  width: 24px;
+}
+
+.animated-check path {
+  fill: none;
+  stroke: #7ac142;
+  stroke-width: 4;
+  stroke-dasharray: 23;
+  stroke-dashoffset: 23;
+  animation: draw 1.6s linear forwards;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@keyframes draw {
+  25% {
+    stroke-dashoffset: 23;
+  }
+  40% {
+    stroke-dashoffset: 0;
+  }
+  60% {
+    stroke-dashoffset: 0;
+  }
+}

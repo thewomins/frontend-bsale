@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="colors.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="stylesheet" href="component/button/button.css" />
+    <link rel="stylesheet" href="component/productCard/productCard.css" />
+    <link rel="stylesheet" href="styles/search.css" />
+    <link rel="stylesheet" href="styles/productosDisplay.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="/main.js"></script>
+    <script defer type="module" src="scripts/menu.js"></script>
+    <script defer type="module" src="scripts/search.js"></script>
+    <script defer type="module" src="scripts/productosDisplay.js"></script>
+    <title>Bsale</title>
+  </head>
+
+  <body>
+    <div id="search">
+      <a href="http://127.0.0.1:5173/">Bsale</a>
+      <div class="buscador">
+        <input />
+        <img src="https://img.icons8.com/ios-glyphs/30/null/search--v1.png" />
+      </div>
+      <div id="carrito">
+        <img
+          src="https://img.icons8.com/material-outlined/48/null/shopping-cart--v1.png"
+        />
+      </div>
+    </div>
+    <div class="content">
+      <div id="categories">
+        <p class="title">Categorias</p>
+        <div id="items-container"></div>
+      </div>
+      <div id="products-container">
+        <div id="products"></div>
+
+        <div id="pages"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../colors.css" />
+    <link rel="stylesheet" href="../component/button/button.css" />
+    <link
+      rel="stylesheet"
+      href="../component/productCardWide/productCardWide.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../component/productCardWide/productCardWide.js"
+    />
+    <link rel="stylesheet" href="../styles/search.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="carrito.css" />
+    <script defer type="module" src="../scripts/search.js"></script>
+    <script defer type="module" src="carrito.js"></script>
+    <title>Vite App</title>
+  </head>
+
+  <body>
+    <div id="search">
+      <a href="http://127.0.0.1:5173/">Bsale</a>
+      <div class="buscador">
+        <input />
+        <img src="https://img.icons8.com/ios-glyphs/30/null/search--v1.png" />
+      </div>
+      <div id="carrito">
+        <img
+          src="https://img.icons8.com/material-outlined/48/null/shopping-cart--v1.png"
+        />
+      </div>
+    </div>
+    <h1>Carrito de compras</h1>
+    <div id="content">
+      <div id="productos"></div>
+      <div id="resumen">
+        <div class="space-between productos-precio">
+          <p>Productos</p>
+        </div>
+        <div class="space-between descuentos-precio">
+          <p>Descuentos</p>
+        </div>
+        <div class="space-between total-precio">
+          <p>Total</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

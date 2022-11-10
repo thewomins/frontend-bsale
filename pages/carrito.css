@@ -1,0 +1,55 @@
+#content {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+#productos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px 20px 60px;
+  border-radius: 12px;
+  padding: 30px;
+  gap: 10px;
+  background-color: var(--primaryContainer);
+}
+
+#resumen {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 20px;
+  height: fit-content;
+  width: 250px;
+  border-radius: 12px;
+  background-color: var(--primaryContainer);
+  box-shadow: 2px 2px 4px var(--shadow);
+  margin: 20px 50px 20px 0px;
+  gap: 20px;
+  color: var(--onPrimaryContainer);
+}
+
+#resumen .button {
+  align-self: flex-end;
+}
+
+#resumen p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-precio {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3em;
+}
