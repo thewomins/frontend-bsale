@@ -13,7 +13,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GITHUB_TOKEN }}
-      - name: install-prettier
-        run: yarn add prettier
+      - name: install
+        run: yarn install
       - name: prettier
         run: yarn check-format
