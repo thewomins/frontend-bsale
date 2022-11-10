@@ -16,4 +16,4 @@ jobs:
       - name: install-prettier
         run: yarn add prettier
       - name: prettier
-        run: yarn prettier --check .
+        run: yarn check-format
