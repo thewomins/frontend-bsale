@@ -1,5 +1,6 @@
 import {Button} from "../component/button/button";
 import {ProductCardWide} from "../component/productCardWide/productCardWide";
+import {envP} from "../main";
 
 const content = document.getElementById("productos");
 const resumen = document.getElementById("resumen");
@@ -16,7 +17,7 @@ const getProductsById = (listIds) => {
     string += "&ids=" + id;
   });
   //http://127.0.0.1:8000/products/?ids=7&ids=8&ids=9
-  return fetch("http://127.0.0.1:8000/products/?" + string)
+  return fetch(envP.API_URL + "products/?" + string)
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);

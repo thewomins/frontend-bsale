@@ -1,8 +1,9 @@
 import {ProductCard} from "../component/productCard/productCard";
 import {Button} from "../component/button/button";
+import {envP} from "../main";
 
 const getProductsByCategory = async (categoryId) => {
-  return fetch(`http://127.0.0.1:8000/category/${categoryId}`)
+  return fetch(envP.API_URL + `category/${categoryId}`)
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -15,7 +16,7 @@ const getProductsByCategory = async (categoryId) => {
 };
 
 const getProductsByName = async (arg) => {
-  return fetch(`http://127.0.0.1:8000/search/products/${arg}`)
+  return fetch(envP.API_URL + `search/products/${arg}`)
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -28,7 +29,7 @@ const getProductsByName = async (arg) => {
 };
 
 const getProductsInRange = async (min, max) => {
-  return fetch(`http://127.0.0.1:8000/products/inrange/${min}-${max}`)
+  return fetch(envP.API_URL + `products/inrange/${min}-${max}`)
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
