@@ -7,6 +7,7 @@ Test web page to shop products
 Build status
 
 ## Code style
+
 [![Format-prettier](https://github.com/thewomins/frontend-bsale/actions/workflows/auto-format-prettier.yaml/badge.svg)](https://github.com/thewomins/frontend-bsale/actions/workflows/auto-format-prettier.yaml)
 
 ## Built with
