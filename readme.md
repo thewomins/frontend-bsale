@@ -1,10 +1,8 @@
 # Bsale shop
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1a688e17-a7c9-434f-b85f-6f8a8e1c6b5e/deploy-status)](https://app.netlify.com/sites/funny-pegasus-5efc56/deploys)
+
 Test web page to shop products
-
-## Build status
-
-Build status
 
 ## Code style
 
