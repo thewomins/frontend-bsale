@@ -16,7 +16,9 @@ Test web page to shop products
 
 ## Installation
 
-Provide step by step series of examples and explanations about how to get a development env running.
+```bash
+yarn install
+```
 
 ## How to use?
 
