@@ -17,4 +17,3 @@ jobs:
         run: yarn add prettier
       - name: prettier
         run: yarn prettier --check .
-
