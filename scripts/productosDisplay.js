@@ -1,6 +1,7 @@
 import {ProductCard} from "../component/productCard/productCard";
 import {Button} from "../component/button/button";
 import {envP} from "../main";
+import notFoundImage from "../assets/not-found.webp";
 
 const getProductsByCategory = async (categoryId) => {
   return fetch(envP.API_URL + `category/${categoryId}`)
@@ -58,7 +59,7 @@ const showInRange = (parent, products, range) => {
     index++
   ) {
     if (products[index].url_image === "") {
-      products[index].url_image = "../assets/not-found.webp";
+      products[index].url_image = notFoundImage;
     }
     const product = ProductCard({
       nombre:
