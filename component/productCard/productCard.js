@@ -10,7 +10,6 @@ const ProductCard = ({
 }) => {
   precio = parseInt(precio);
   discount = parseInt(discount);
-  console.log(precio, discount);
   const templateInner = `
     <div class="card-container-image">
     <img src="${imageUrl}"/> 
