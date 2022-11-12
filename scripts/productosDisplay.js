@@ -13,7 +13,8 @@ const getProductsByCategory = async (categoryId) => {
     })
     .then((data) => {
       return data;
-    });
+    })
+    .catch((err) => console.log(err));
 };
 
 const getProductsByName = async (arg) => {
@@ -26,7 +27,8 @@ const getProductsByName = async (arg) => {
     })
     .then((data) => {
       return data;
-    });
+    })
+    .catch((err) => console.log(err));
 };
 
 const getProductsInRange = async (min, max) => {
@@ -39,7 +41,8 @@ const getProductsInRange = async (min, max) => {
     })
     .then((data) => {
       return data;
-    });
+    })
+    .catch((err) => console.log(err));
 };
 
 //calcula el rango de productos a mostar
@@ -112,9 +115,7 @@ const showPage = async (parent) => {
 
   if (params[0] === "#category") {
     const category = await getProductsByCategory(params[1].split("-")[1]);
-    console.log(category);
     maxPages = Math.ceil(category.products.length / 12);
-    console.log(params, range, maxPages);
     setPages(maxPages);
     showInRange(parent, category.products, range);
     return;

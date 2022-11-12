@@ -26,21 +26,19 @@ const getProductsById = (listIds) => {
     })
     .then((data) => {
       return data;
-    });
+    })
+    .catch((err) => console.log(err));
 };
 
 /*
  * AÑADE PRODUCTOS
  */
 const carrito = sessionStorage.getItem("carrito").split(",");
-console.log(carrito);
 
 const products = await getProductsById(carrito);
-console.log(products);
 
 products.map(({name, discount, url_image, price}) => {
   precio += parseInt(price);
-  console.log(parseInt(price));
   descuento += parseInt(price) * (parseInt(discount) / 100);
   content.appendChild(
     ProductCardWide({
